@@ -8,9 +8,14 @@ Este projeto faz parte de um desafio de Ciência de Dados focado em entender o c
 O objetivo principal é transformar dados brutos de transações em insights de negócios. Através da Análise Exploratória de Dados (EDA) e modelos de Machine Learning, buscamos responder perguntas estratégicas e sugerir combinações de produtos ("quem compra X, também costuma comprar Y").
 
 ## Estrutura do Repositório
-* `Data/`: Armazenamento local do dataset (arquivos .csv são ignorados pelo Git devido ao tamanho).
-* `Notebooks/`: Scripts e Jupyter Notebooks com as análises.
+* `analise_varejo.ipynb`: Jupyter Notebook com toda a análise.
 * `README.md`: Documentação principal do projeto.
+
+## Como Reproduzir
+1. Baixe o dataset no [Kaggle](https://www.kaggle.com/datasets/prasad22/retail-transactions-dataset).
+2. Salve o arquivo como `Data/Retail_Transactions_Dataset.csv` na raiz do projeto (arquivos `.csv` são ignorados pelo Git devido ao tamanho).
+3. Instale as dependências: `pip install pandas matplotlib seaborn mlxtend jupyter`.
+4. Execute o notebook `analise_varejo.ipynb`.
 
 ---
 ## Etapas de Desenvolvimento
@@ -77,9 +82,9 @@ Implementação de modelos de associação para identificar padrões de consumo:
 ---
 
 ## Tecnologias Utilizadas
-- **Python** (Pandas, Numpy)
+- **Python** (Pandas)
 - **Visualização:** Seaborn, Matplotlib
-- **Machine Learning:** MLxtend / Scikit-Learn
+- **Machine Learning:** MLxtend (Apriori e FP-Growth)
 - **Versionamento:** Git & GitHub
 
 ## Base de Dados
